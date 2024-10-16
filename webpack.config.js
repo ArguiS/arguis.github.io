@@ -52,7 +52,8 @@ module.exports = {
         }),
         new CopyWebpackPlugin({
             patterns: [
-                { from: path.resolve(__dirname, './songs.db'), to: path.resolve(__dirname, 'dist/songs.db') } 
+                { from: path.resolve(__dirname, './songs.db'), to: path.resolve(__dirname, 'dist/songs.db') },
+                { from: path.resolve(__dirname, './latest.db'), to: path.resolve(__dirname, 'dist/latest.db') } 
             ]
         }),
     ],
