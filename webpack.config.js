@@ -31,21 +31,25 @@ module.exports = {
             template: './src/index.html',
             filename: 'index.html',
             chunks: ['index'],
+            cache: false
         }),
         new HtmlWebpackPlugin({
             template: './src/nav.html',
             filename: 'nav.html',
             chunks: ['nav'],
+            cache: false
         }),
         new HtmlWebpackPlugin({
             template: './src/db-test/db.html',
-            filename: 'db.html',
+            filename: 'db-test/db.html',
             chunks: ['db'],
+            cache: false
         }),
         new HtmlWebpackPlugin({
             template: './src/ratings/rating1/rating1.html',
-            filename: 'rating1.html',
+            filename: 'ratings/rating1/rating1.html',
             chunks: ['rating1'],
+            cache: false
         }),
         new MiniCssExtractPlugin({
             filename: '[name].css',
