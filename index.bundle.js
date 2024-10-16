@@ -1,1 +1,1 @@
-console.log("yeah");
+(()=>{"use strict";console.log("yeah")})();

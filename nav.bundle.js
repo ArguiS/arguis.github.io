@@ -1,1 +1,1 @@
-console.log("nav");
+(()=>{"use strict";console.log("nav")})();
