@@ -7,7 +7,8 @@ module.exports = {
     entry: {
         index: './src/index.js',
         nav: './src/nav.js',
-        db: './src/db-test/db.js'
+        db: './src/db-test/db.js',
+        rating1: './src/ratings/rating1/rating1.js'
     },
     output: {
         filename: '[name].bundle.js',
@@ -41,12 +42,17 @@ module.exports = {
             filename: 'db.html',
             chunks: ['db'],
         }),
+        new HtmlWebpackPlugin({
+            template: './src/ratings/rating1/rating1.html',
+            filename: 'rating1.html',
+            chunks: ['rating1'],
+        }),
         new MiniCssExtractPlugin({
             filename: '[name].css',
         }),
         new CopyWebpackPlugin({
             patterns: [
-                { from: path.resolve(__dirname, 'src/songs.db'), to: path.resolve(__dirname, 'dist/songs.db') } 
+                { from: path.resolve(__dirname, './songs.db'), to: path.resolve(__dirname, 'dist/songs.db') } 
             ]
         }),
     ],
