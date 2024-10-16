@@ -122,7 +122,7 @@
     "wildcard": "^2.0.1"
   },
 "scripts": {
-  "build": "your-build-command",
+  "build": "webpack",
   "deploy": "git checkout prod && cp -r dist/* . && git add . && git commit -m 'Deploying to GitHub Pages' && git push origin prod && git checkout -"
 },
   "keywords": [],
