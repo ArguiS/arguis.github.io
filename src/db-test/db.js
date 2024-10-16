@@ -1,4 +1,4 @@
-import './styles.css';
+import './../styles.css';
 
 async function loadDatabase() {
     const SQL = await initSqlJs({ locateFile: filename => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/${filename}` });

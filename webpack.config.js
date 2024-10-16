@@ -7,7 +7,7 @@ module.exports = {
     entry: {
         index: './src/index.js',
         nav: './src/nav.js',
-        db: './src/db.js'
+        db: './src/db-test/db.js'
     },
     output: {
         filename: '[name].bundle.js',
@@ -37,7 +37,7 @@ module.exports = {
             chunks: ['nav'],
         }),
         new HtmlWebpackPlugin({
-            template: './src/db.html',
+            template: './src/db-test/db.html',
             filename: 'db.html',
             chunks: ['db'],
         }),
