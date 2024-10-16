@@ -123,7 +123,8 @@
   },
 "scripts": {
   "build": "webpack",
-  "deploy": "git checkout prod && cp -r dist/* . && git add . && git commit -m 'Deploying to GitHub Pages' && git push origin prod && git checkout -"
+  "deploy": "git checkout prod && cp -r dist/* . && git add . && git commit -m 'Deploying to GitHub Pages' && git push origin prod && git checkout -",
+  "deploy-win": "git checkout prod && xcopy dist\\*.* . /E /H /C /I && git add . && git commit -m 'Deploying to GitHub Pages' && git push origin prod && git checkout -"
 },
   "keywords": [],
   "author": "",
